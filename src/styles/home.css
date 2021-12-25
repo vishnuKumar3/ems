@@ -1,0 +1,202 @@
+#home{
+	margin-top:60px;
+	width:100%;
+	height:100%;
+}
+
+#home #bike_details{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:10px 10px;
+	height:500px;
+	margin-top:100px;
+	border:1px solid transparent;
+}
+
+#home #bike_details #left{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	padding-left:0%;
+	width:50%;
+	height:100%;
+	border:1px solid transparent;
+}
+
+#home #bike_details #left p:nth-child(1){
+	width:500px;
+	font-weight:400;
+	font-size:64px;
+	letter-spacing:5px;
+	margin-bottom:30px;
+}
+
+#home #bike_details #left #specs{
+	display:flex;
+	align-items:center;
+	background:black;
+	border-radius:10px;
+	width:max-content;
+	padding:40px 0px;
+	margin-top:10px;
+}
+
+#home #bike_details #left #specs #specs-child{
+	border-width:0px 1px 0px 0px;
+	border-color:white;
+	border-style:solid;
+	color:white;
+	height:30px;
+	display:flex;
+	width:max-content;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	padding:0px 20px;
+}
+
+#home #bike_details #left #specs #specs-child p:nth-child(1){
+	font-size:30px;
+	width:max-content;
+	margin:0;
+	font-size:30px;
+	font-weight:400;
+	letter-spacing:1px;
+}
+
+#home #bike_details #left p:nth-child(2){
+	font-weight:400;
+	font-size:14px;
+	letter-spacing:2px;
+}
+
+#home #bike_details img{
+	width:500px;
+	height:100%;
+}
+
+
+#home #bike_details #left button{
+	margin-top:20px;
+	background:#582DBC;
+	color:white;
+	border:1px solid transparent;
+	padding:10px 15px;
+	cursor:pointer;
+	width:max-content;
+	letter-spacing:2px;	
+}
+
+#home #video{
+	padding:10px 10px;
+	height:max-content;
+	width:100%;
+	margin-top:50px;		
+}
+
+#home #video p:nth-child(1){
+	margin-left:20px;
+	margin-top:10px;
+	font-size:40px;
+	font-weight:400;
+	position:absolute;
+	color:white;
+	letter-spacing:2px;
+}
+
+#home #video p:nth-child(2){
+	margin-top:70px;
+	font-size:20px;
+	margin-left:20px;
+	position:absolute;
+	color:white;
+	letter-spacing:2px;
+}
+
+#home #video p:nth-child(4){
+	color:red;
+	font-size:20px;
+	margin-left:20px;
+	transform:translateY(-100px);
+	color:white;
+	cursor:pointer;
+	letter-spacing:2px;
+}
+
+#home #products_are{
+	height:100%;
+	margin-top:20px;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+}
+
+#home #products_are #details{
+	display:flex;
+	margin-top:30px;
+	flex-direction:row;
+	align-items:flex-start;
+	justify-content:center;
+	padding:10px 5px;
+}
+
+#home #products_are #details #left{
+	width:80%;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+#home #products_are #details #left #specs{
+	width:50%;
+	height:250px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border:1px solid white;
+}
+
+
+#home #products_are #details #left #specs #top{
+	display:flex;
+	align-items:flex-end;
+}
+
+#home #products_are #details #left #specs #top img{
+	width:60px;
+	height:60px;
+	margin-right:10px;
+}
+
+#home #products_are #details #left #specs #top p:nth-child(2){
+	font-size:30px;
+	margin-right:5px;
+	color:#582DBC;
+}
+
+#home #products_are #details #left #specs #top p:nth-child(3){
+	font-size:70px;
+	color:#0001;
+}
+
+#home #products_are #details #left #specs #bottom{
+	margin-top:5px;
+}
+
+#home #products_are #details #right{
+	width:20%;
+	border:1px solid red;
+	display:flex;
+	
+}
+
+#home #products_are #details #right video{
+	width:100%;
+	height:500px;
+}
+
+#home #products_are #details #right video source{
+	width:100%;
+	height:100%;
+}
+
