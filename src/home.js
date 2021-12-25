@@ -24,6 +24,40 @@ var res={
 		}						
 }
 
+var mostSold={
+	1:{
+		"img":"images/bike3.png",
+		"model":"gs-4322"
+		},
+	2:{
+		"img":"images/bike.png",
+		"model":"gs-4323"
+		},
+	3:{
+		"img":"images/bike2.png",
+		"model":"gs-4324"
+		},
+	4:{
+		"img":"images/bike1.png",
+		"model":"gs-4325"
+		},
+	5:{
+		"img":"images/bike2.png",
+		"model":"gs-4327"
+		}						
+}
+
+const expand=(event)=>{
+	var ele=event.target.parentNode.nextSibling;
+	if(ele.style.animationName!="expand_query"){
+		ele.style.animation="expand_query 0.5s linear both";
+		}
+	else{
+		ele.style.animation="diminish_query 0.5s linear both";		
+		
+		}
+}
+
 export default function Home(){
 	return(
 		<div id="home">
@@ -59,7 +93,7 @@ export default function Home(){
 			<div id="video">
 				<p>Way Towards ....</p>
 				<p>A good write up that relates to the video shown</p>
-				<video controls>
+				<video poster="images/scooter1.png" controls>
 					<source src="ride.mp4"/>
 				</video>
 				<p>Book a free ride now</p>
@@ -71,7 +105,7 @@ export default function Home(){
 						<div id="specs">
 							<div id="inner-specs">
 							<div id="top">
-								<img src="images/clock.png"/>
+								<img src="images/clock.png" alt="clock"/>
 								<p>FAST</p>
 								<p>01</p>
 							</div>
@@ -83,7 +117,7 @@ export default function Home(){
 						<div id="specs">
 							<div id="inner-specs">						
 							<div id="top">
-								<img src="images/durable.png"/>
+								<img src="images/durable.png" alt="durable"/>
 								<p>DURABLE</p>
 								<p>02</p>
 							</div>
@@ -95,7 +129,7 @@ export default function Home(){
 						<div id="specs">
 							<div id="inner-specs">						
 							<div id="top">
-								<img src="images/charge.png"/>
+								<img src="images/charge.png" alt="charge"/>
 								<p>CHARGE</p>
 								<p>03</p>
 							</div>
@@ -107,7 +141,7 @@ export default function Home(){
 						<div id="specs">
 							<div id="inner-specs">						
 							<div id="top">
-								<img src="images/economic.png"/>
+								<img src="images/economic.png" alt="economic"/>
 								<p>ECONOMIC</p>
 								<p>04</p>
 							</div>
@@ -119,7 +153,7 @@ export default function Home(){
 												
 					</div>
 					<div id="right">
-						<video controls>
+						<video poster="images/scooter2.png" controls>
 							<source src="ride.mp4"/>
 						</video>
 					</div>
@@ -128,6 +162,80 @@ export default function Home(){
 			<div id="models">
 				<Title title="our models"/>
 				<Model items={res}/>
+			</div>
+			<div id="future">
+				<p>Electric scooter is the future</p>
+				<p>sometimes all we only need a push</p>
+				<div id="repr">
+					<img src="images/scooter3.png"/>
+					<video controls poster="images/scooter4.png">
+						<source src="ride.mp4"/>
+					</video>
+				</div>
+				<div id="specs">
+					<div id="specs-inner">
+						<p>01</p>
+						<p>eco friendly</p>
+					</div>
+					<div id="specs-inner">
+						<p>02</p>
+						<p>commute when tired</p>
+					</div>
+					<div id="specs-inner">
+						<p>03</p>
+						<p>easy to access</p>
+					</div>										
+				</div>
+			</div>
+			<div id="most-sold">
+				<Title title="most sold scooters"/>
+				<Model items={mostSold}/>
+			</div>
+			<div id="query">
+				<Title title="queries"/>
+				<div>			
+					<form>
+						<input type="text" placeholder="your name"/>
+						<input type="text" placeholder="your email address"/>
+						<input type="text" placeholder="model you liked"/>
+						<input type="text" placeholder="your query"/>
+						<input type="submit" value="submit"/>
+					</form>
+					<img src="images/bike.png"/>
+				</div>
+			</div>
+			<div id="facts">
+				<Title title="facts and questions"/>
+				<div id="facts-inner">
+					<div id="question">
+						<p>where do i buy these products from?</p>
+						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png"/>
+					</div>
+					<div id="answer">
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					</div>
+					<div id="question">
+						<p>what is the warranty of this product?</p>
+						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png"/>
+					</div>
+					<div id="answer">
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					</div>
+					<div id="question">
+						<p>how will it be delivered?</p>
+						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png"/>
+					</div>
+					<div id="answer">
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					</div>
+					<div id="question">
+						<p>what is the guarantee that i will recieve the right product?</p>
+						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png"/>
+					</div>
+					<div id="answer">
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					</div>															
+				</div>
 			</div>
 		</div>
 	);

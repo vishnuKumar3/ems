@@ -37,6 +37,23 @@
 	width:80%;
 	color:white;
 	background:#582DBC;
+	display:flex;
+	justify-content:center;
+}
+
+#model-inner #card button div{
+	display:flex;
+	align-items:center;
+}
+
+#model-inner #card button div p{
+	margin-right:0px;
+}
+
+#model-inner #card button div img{
+	width:20px;
+	height:20px;
+	margin-left:20px;
 }
 
 #model-inner #card button:nth-child(4){

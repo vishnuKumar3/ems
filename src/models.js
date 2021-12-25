@@ -7,8 +7,12 @@ export default function Models(models){
 				<div id="card">
 				<img src={value.img}/>
 				<p>{value.model}</p>
-				<button>add to cart</button>
-				<button>>> compare</button>
+				<button><div>
+					<p>add to cart</p>
+					<img src="images/cart.png"/>
+					</div>
+				</button>
+				<button>+ compare</button>
 				</div>);})}
 		</div>
 	);
