@@ -1,0 +1,48 @@
+#model-inner{
+	height:500px;
+	width:100%;
+	overflow-x:scroll;
+	display:flex;
+	align-items:center;
+	margin-top:50px;
+}
+
+#model-inner::-webkit-scrollbar{width:0px;background:none;}
+
+#model-inner #card{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	height:100%;
+	width:400px;
+	border:1px solid transparent;
+}
+
+#model-inner #card img{
+	width:350px;
+	height:350px;
+}
+
+#model-inner #card p:nth-child(2){
+	font-size:30px;
+	letter-spacing:2px;
+}
+
+#model-inner #card button:nth-child(3){
+	margin-top:10px;
+	padding:8px 10px;
+	letter-spacing:2px;
+	border:none;
+	font-size:18px;
+	width:80%;
+	color:white;
+	background:#582DBC;
+}
+
+#model-inner #card button:nth-child(4){
+	letter-spacing:2px;
+	margin-top:10px;
+	padding:5px 10px;
+	font-size:18px;
+	width:80%;
+}

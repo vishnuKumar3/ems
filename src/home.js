@@ -1,4 +1,28 @@
 import Title from "./heading.js";
+import Model from "./models.js";
+
+var res={
+	1:{
+		"img":"images/bike.png",
+		"model":"gs-4322"
+		},
+	2:{
+		"img":"images/bike1.png",
+		"model":"gs-4323"
+		},
+	3:{
+		"img":"images/bike2.png",
+		"model":"gs-4324"
+		},
+	4:{
+		"img":"images/bike3.png",
+		"model":"gs-4325"
+		},
+	5:{
+		"img":"images/bike3.png",
+		"model":"gs-4325"
+		}						
+}
 
 export default function Home(){
 	return(
@@ -45,40 +69,52 @@ export default function Home(){
 				<div id="details">
 					<div id="left">
 						<div id="specs">
+							<div id="inner-specs">
 							<div id="top">
 								<img src="images/clock.png"/>
 								<p>FAST</p>
 								<p>01</p>
 							</div>
 							<div id="bottom">
+								~ 60kMPH
+							</div>
 							</div>
 						</div>
 						<div id="specs">
+							<div id="inner-specs">						
 							<div id="top">
-								<img src="images/clock.png"/>
-								<p>FAST</p>
-								<p>01</p>
+								<img src="images/durable.png"/>
+								<p>DURABLE</p>
+								<p>02</p>
 							</div>
 							<div id="bottom">
-							</div>							
+								~ 2 Years
+							</div>	
+							</div>						
 						</div>
 						<div id="specs">
+							<div id="inner-specs">						
 							<div id="top">
-								<img src="images/clock.png"/>
-								<p>FAST</p>
-								<p>01</p>
+								<img src="images/charge.png"/>
+								<p>CHARGE</p>
+								<p>03</p>
 							</div>
 							<div id="bottom">
-							</div>							
+							 ~ 5 HOURS
+							</div>			
+							</div>				
 						</div>
 						<div id="specs">
+							<div id="inner-specs">						
 							<div id="top">
-								<img src="images/clock.png"/>
-								<p>FAST</p>
-								<p>01</p>
+								<img src="images/economic.png"/>
+								<p>ECONOMIC</p>
+								<p>04</p>
 							</div>
 							<div id="bottom">
-							</div>							
+								~ RS.20k
+							</div>			
+							</div>				
 						</div>
 												
 					</div>
@@ -88,6 +124,10 @@ export default function Home(){
 						</video>
 					</div>
 				</div>
+			</div>
+			<div id="models">
+				<Title title="our models"/>
+				<Model items={res}/>
 			</div>
 		</div>
 	);
