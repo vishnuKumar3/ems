@@ -24,7 +24,7 @@
 	border:1px solid transparent;
 }
 
-#home #bike_details #left p:nth-child(1){
+#home #bike_details #left #title{
 	width:500px;
 	font-weight:400;
 	font-size:64px;
@@ -32,7 +32,7 @@
 	margin-bottom:30px;
 }
 
-#home #bike_details #left #specs{
+/*#home #bike_details #left #specs{
 	display:flex;
 	align-items:center;
 	background:black;
@@ -60,10 +60,9 @@
 	font-size:30px;
 	width:max-content;
 	margin:0;
-	font-size:30px;
 	font-weight:400;
 	letter-spacing:1px;
-}
+}*/
 
 #home #bike_details #left p:nth-child(2){
 	font-weight:400;

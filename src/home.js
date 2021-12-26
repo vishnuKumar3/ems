@@ -1,5 +1,9 @@
-import Title from "./heading.js";
-import Model from "./models.js";
+import Title from "./components/heading.js";
+import Model from "./components/models.js";
+import Specs from "./components/specs.js";
+import "./styles/home.css";
+import "./styles/global.css";
+import "./styles/models.css";
 
 var res={
 	1:{
@@ -22,7 +26,27 @@ var res={
 		"img":"images/bike3.png",
 		"model":"gs-4325"
 		}						
-}
+};
+
+var specs={
+	1:{
+		"title":"5 hours",
+		"sub":"charge time"
+	},
+	2:{
+		"title":"150kg",
+		"sub":"max load"	
+	},
+	3:{
+		"title":"50 km",
+		"sub":"per charge"	
+	},
+	4:{
+		"title":"1000w",
+		"sub":"motor"	
+	}
+	
+};
 
 var mostSold={
 	1:{
@@ -45,7 +69,7 @@ var mostSold={
 		"img":"images/bike2.png",
 		"model":"gs-4327"
 		}						
-}
+};
 
 const expand=(event)=>{
 	var ele=event.target.parentNode.nextSibling;
@@ -63,29 +87,12 @@ export default function Home(){
 		<div id="home">
 			<div id="bike_details">
 				<div id="left">
-				<p>
+				<p id="title">
 					PRESENTING OUR ALL
 					NEW GS-4321
 				</p>
 					<p>product specifications</p>
-					<div id="specs">
-						<div id="specs-child"> 
-							<p>5 HOURS</p>
-							<p>charge time</p>
-						</div>
-						<div id="specs-child"> 
-							<p>150 kg</p>
-							<p>max load</p>
-						</div>
-						<div id="specs-child"> 
-							<p>50 km</p>
-							<p>per charge</p>
-						</div>
-						<div id="specs-child" style={{boder:"none"}}> 
-							<p>1000W</p>
-							<p>motor</p>
-						</div>
-					</div>
+					<Specs details={specs}/>
 					<button>view product details</button>
 				</div>
 				<img src="images/bike.png" alt="bike"/>
@@ -167,7 +174,7 @@ export default function Home(){
 				<p>Electric scooter is the future</p>
 				<p>sometimes all we only need a push</p>
 				<div id="repr">
-					<img src="images/scooter3.png"/>
+					<img src="images/scooter3.png" alt="scooter"/>
 					<video controls poster="images/scooter4.png">
 						<source src="ride.mp4"/>
 					</video>
@@ -201,7 +208,7 @@ export default function Home(){
 						<input type="text" placeholder="your query"/>
 						<input type="submit" value="submit"/>
 					</form>
-					<img src="images/bike.png"/>
+					<img src="images/bike.png" alt="bike"/>
 				</div>
 			</div>
 			<div id="facts">
@@ -209,28 +216,28 @@ export default function Home(){
 				<div id="facts-inner">
 					<div id="question">
 						<p>where do i buy these products from?</p>
-						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png"/>
+						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png" alt="arrow_down"/>
 					</div>
 					<div id="answer">
 						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 					</div>
 					<div id="question">
 						<p>what is the warranty of this product?</p>
-						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png"/>
+						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png" alt="arrow_down"/>
 					</div>
 					<div id="answer">
 						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 					</div>
 					<div id="question">
 						<p>how will it be delivered?</p>
-						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png"/>
+						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png" alt="arrow_down"/>
 					</div>
 					<div id="answer">
 						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 					</div>
 					<div id="question">
 						<p>what is the guarantee that i will recieve the right product?</p>
-						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png"/>
+						<img onClick={(event)=>{expand(event)}} src="images/arrow_black.png" alt="arrow_down"/>
 					</div>
 					<div id="answer">
 						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum

@@ -2,10 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import "./styles/index.css";
-import "./styles/home.css";
-import "./styles/global.css";
-import "./styles/models.css";
 import Home from "./home.js";
+import Product from "./product.js";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 const SocialMedia=(event)=>{
@@ -64,7 +62,8 @@ function Index(){
 				</div>
 			</div>
 			<Routes>
-				<Route path="/" element={<Home/>}/>
+				<Route exact path="/" element={<Home/>}/>
+				<Route path="/product" element={<Product/>}/>
 			</Routes>
 		</BrowserRouter>
 	);
