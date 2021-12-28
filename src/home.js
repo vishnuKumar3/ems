@@ -3,7 +3,6 @@ import Model from "./components/models.js";
 import Specs from "./components/specs.js";
 import "./styles/home.css";
 import "./styles/global.css";
-import "./styles/models.css";
 
 var res={
 	1:{

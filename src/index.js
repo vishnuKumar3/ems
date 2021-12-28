@@ -4,6 +4,8 @@ import reportWebVitals from './reportWebVitals';
 import "./styles/index.css";
 import Home from "./home.js";
 import Product from "./product.js";
+import Store from "./store.js";
+import Contact from "./contact.js";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 const SocialMedia=(event)=>{
@@ -35,7 +37,7 @@ function Index(){
 					</div>
 					<div id="logo">
 						<img src="/images/arrow_black.png"/>
-						<p>Elect My Scooter</p>
+						<a href="/">Elect My Scooter</a>
 					</div>
 				</div>
 				<div id="center">
@@ -52,7 +54,7 @@ function Index(){
 				<div id="right">
 					<img onClick={(event)=>SocialMedia(event)} src="images/arrow.png"/>
 					<div id="drop-dwn">
-						<a href="#">Store</a>
+						<a href="/store">Store</a>
 						<a href="#">Favourites</a>
 						<a href="#">Cart</a>
 						<a href="#">Compare</a>
@@ -64,6 +66,8 @@ function Index(){
 			<Routes>
 				<Route exact path="/" element={<Home/>}/>
 				<Route path="/product" element={<Product/>}/>
+				<Route path="/store" element={<Store/>}/>
+				<Route path="/contact" element={<Contact/>}/>
 			</Routes>
 		</BrowserRouter>
 	);

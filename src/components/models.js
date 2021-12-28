@@ -1,3 +1,4 @@
+import "../styles/models.css";
 export default function Models(models){
 	console.log(models.items);
 	return(

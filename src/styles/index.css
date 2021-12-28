@@ -68,6 +68,11 @@
 	width:20px;
 	height:15px;
 	margin-right:15px;
+}
+
+#navbar #left #logo a:nth-child(2){
+	text-decoration:none;
+	color:black;
 }	
 
 #navbar #center div{

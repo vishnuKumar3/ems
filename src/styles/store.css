@@ -1,0 +1,12 @@
+#store{
+	margin-top:100px;
+	display:flex;
+	flex-direction:column;
+}
+
+#store #model-inner{
+	overflow-x:hidden;
+	flex-wrap:wrap;
+	overflow-y:visible;
+	height:auto; 	
+}
