@@ -11,6 +11,7 @@ import Profile from "./profile.js";
 import About from "./about.js";
 import AllProducts from "./all_products.js";
 import Comparison from "./comparison.js";
+import MyCart from "./mycart.js";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 const SocialMedia=(event)=>{
@@ -61,8 +62,8 @@ function Index(){
 					<div id="drop-dwn">
 						<a href="/store">Store</a>
 						<a href="/favourites">Favourites</a>
-						<a href="#">Cart</a>
-						<a href="/compare">Compare</a>
+						<a href="/mycart">Cart</a>
+						<a href="/comparison">Compare</a>
 						<a href="/about">About Us</a>
 						<a href="/contact">Contact Us</a>
 					</div>
@@ -78,6 +79,7 @@ function Index(){
 				<Route path="/about" element={<About/>}/>								
 				<Route path="/allProducts" element={<AllProducts/>}/>
 				<Route path="/comparison" element={<Comparison/>}/>				
+				<Route path="/mycart" element={<MyCart/>}/>				
 			</Routes>
 		</BrowserRouter>
 	);

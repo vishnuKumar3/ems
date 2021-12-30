@@ -80,11 +80,11 @@
 }
 
 #navbar #center div input{
-	box-sizing:initial;
-	padding:0px 5px 1px 5px;
+	box-sizing:border-box;
+	padding:0px 5px 0px 5px;
 	border-radius:5px 0px 0px 5px;
 	border:0px solid transparent;
-	height:90%;
+	height:95%;
 	width:300px;
 	letter-spacing:2px;
 }

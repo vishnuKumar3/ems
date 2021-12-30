@@ -13,6 +13,24 @@ const profile_modify=(id_num)=>{
 	
 }
 
+var res={	
+	1:{
+	"img":"images/bike.png",
+	"price":"3000",
+	"order_date":"12/10/2021"
+	},
+	2:{
+	"img":"images/bike1.png",
+	"price":"3000",
+	"order_date":"13/10/2021"
+	},
+	3:{
+	"img":"images/bike2.png",
+	"price":"5000",
+	"order_date":"15/10/2021"
+	}			
+};
+
 export default function Profile(){
 	return(
 		<div id="profile">
@@ -59,8 +77,20 @@ export default function Profile(){
 						
 						</div>
 						<div id="myorders">
-							myorders
-						</div>
+							<div id="products">
+								{Object.entries(res).map(([key,value],index)=>{
+									return(
+									<div id="vehicle">
+										<img src={value["img"]}/>
+										<p>Model number</p>
+										<p>${value["price"]}</p>
+										<p>order date:{value["order_date"]}</p>
+										<a href="#">write a review</a>
+									</div>)
+									})
+								}								
+							</div>
+						</div>	
 						<div id="subscribe">
 							subscribe
 						</div>

@@ -67,29 +67,29 @@ export default function Comparison(){
 					<div id="compare_details">
 						<p id="title">height</p>
 						<div id="compare">
-							<p>1 m</p>
-							<p>1.5 m</p>
+							<p>2 m</p>
+							<p>2 m</p>
 						</div>
 					</div>
 					<div id="compare_details">
 						<p id="title">weight</p>
 						<div id="compare">
-							<p>5 kg</p>
+							<p>6 kg</p>
 							<p>6 kg</p>
 						</div>
 					</div>
 					<div id="compare_details">
 						<p id="title">battery life</p>
 						<div id="compare">
-							<p>50 hours</p>
-							<p>40 hours</p>
+							<p>60 hours</p>
+							<p>60 hours</p>
 						</div>
 					</div>
 					<div id="compare_details">
 						<p id="title">price</p>
 						<div id="compare">
-							<p>rs 30000</p>
-							<p>rs 25000</p>
+							<p>rs 60000</p>
+							<p>rs 60000</p>
 						</div>
 					</div>					
 															
