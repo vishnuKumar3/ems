@@ -8,6 +8,8 @@ import Store from "./store.js";
 import Contact from "./contact.js";
 import Favourites from "./favourites.js";
 import Profile from "./profile.js";
+import About from "./about.js";
+import AllProducts from "./all_products.js";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 const SocialMedia=(event)=>{
@@ -60,8 +62,8 @@ function Index(){
 						<a href="/favourites">Favourites</a>
 						<a href="#">Cart</a>
 						<a href="#">Compare</a>
-						<a href="#">About Us</a>
-						<a href="#">Contact Us</a>
+						<a href="/about">About Us</a>
+						<a href="/contact">Contact Us</a>
 					</div>
 				</div>
 			</div>
@@ -72,6 +74,8 @@ function Index(){
 				<Route path="/contact" element={<Contact/>}/>
 				<Route path="/favourites" element={<Favourites/>}/>
 				<Route path="/profile" element={<Profile/>}/>				
+				<Route path="/about" element={<About/>}/>								
+				<Route path="/allProducts" element={<AllProducts/>}/>				
 			</Routes>
 		</BrowserRouter>
 	);

@@ -1,10 +1,10 @@
-#store{
+#all_products{
 	margin-top:100px;
 	display:flex;
 	flex-direction:column;
 }
 
-#store #model-inner{
+#all_products #model-inner{
 	justify-content:space-around;
 	overflow-x:hidden;
 	flex-wrap:wrap;
