@@ -67,9 +67,11 @@ export default function Product(){
 	return(
 		<div id="product">
 			<div id="section1">
-				<Title title="product"/>
+				<Title title="product"/>					
 				<div id="inner-box">
-					<img src="images/bike.png" alt="bike"/>
+					<div id="img">
+						<img src="images/bike.png" alt="bike"/>
+					</div>
 					<div id="right">
 						<p id="title">gs-4321<span>(25% off)</span></p>
 						<p>product specifications</p>

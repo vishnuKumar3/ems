@@ -1,0 +1,150 @@
+#comparison{
+	margin-top:100px;
+}
+
+#comparison #section1{
+	display:flex;
+	align-items:flex-start;
+	justify-content:space-around;
+	padding:50px 5% 0px 5%;
+}
+
+#comparison #section1 #v1{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	width:30%;
+}
+
+#comparison #section1 #v2{
+	display:flex;
+	align-items:center;
+	flex-direction:column;	
+	width:30%;
+}
+
+#comparison #section1 #v1 select,#comparison #section1 #v2 select{
+	width:150px;
+	letter-spacing:1px;
+	margin-bottom:30px;
+	background:black;
+	color:white;
+	box-sizing:initial;
+	padding:8px 25px;
+	border-radius:10px;
+	font-size:18px;
+}
+
+#comparison #section1 #v1 a,#comparison #section1 #v2 a{
+	margin-top:20px;
+}
+
+#comparison #section1 #v1 button,#comparison #section1 #v2 button{
+	margin-top:10px;
+	padding:10px 40px;
+	letter-spacing:1px;
+	border:none;
+	font-size:15px;
+	width:max-content;
+	color:white;
+	background:#582DBC;
+	display:flex;
+	justify-content:center;
+	cursor:pointer;
+}
+
+#comparison #section1 #v1 button div,#comparison #section1 #v2 button div{
+	display:flex;
+	align-items:center;
+}
+
+#comparison #section1 #v1 button div p,#comparison #section1 #v2 button div p{
+	margin-right:0px;
+}
+
+#comparison #section1 #v1 button div img,#comparison #section1 #v2 button div img{
+	width:20px;
+	height:20px;
+	margin-left:20px;
+}
+
+#comparison #section1 #v1 #bike,#comparison #section1 #v2 #bike{
+	border:1px solid transparent;
+	border-radius:10px;
+	width:230px;
+	padding:10px 10px;
+	height:230px;
+	background:black;
+}
+
+#comparison #section1 #details{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	width:30%;
+	border:1px solid transparent;
+}
+
+#comparison #section1 #details #compare_details{
+	display:flex;
+	margin-top:20px;
+	flex-direction:column;
+	align-items:center;
+	width:100%;
+}
+
+#comparison #section1 #details #compare_details #title{
+	font-size:20px;
+	letter-spacing:1px;
+	border-bottom:2px solid #582dbc;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:max-content;
+	padding:0px 0px 10px 0px;
+}
+
+
+#comparison #section1 #details #compare_details #compare{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	width:100%;
+}
+
+#comparison #section1 #details #compare_details #compare p:nth-child(1){
+	width:auto;
+	font-size:20px;
+	letter-spacing:1px;
+	color:#582dbc;
+}
+
+#comparison #section1 #details #compare_details #compare p:nth-child(2){
+	font-size:20px;
+	letter-spacing:1px;
+	color:#582dbc;	
+}
+
+#comparison #section2{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	padding:20px 5% 0px 5%;	
+	align-items:center;
+}
+
+#comparison #section2 center {
+	padding-bottom:50px;
+	margin-top:50px;
+}
+
+#comparison center button{
+	padding:10px 60px;
+	letter-spacing:2px;
+	border:none;
+	color:white;
+	font-weight:500;
+	background:#5c23dc;
+}
+
+
