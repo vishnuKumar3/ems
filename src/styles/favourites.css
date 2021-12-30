@@ -1,0 +1,31 @@
+#favourites{
+	margin-top:100px;
+	padding-bottom:30px;
+}
+
+#favourites #bottom{
+	padding:50px 80px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+
+#favourites #bottom p:nth-child(1){
+	font-size:30px;
+}
+
+#favourites #bottom p:nth-child(2){
+	font-size:20px;
+	padding:10px 100px 0px 100px;
+	text-align:center;
+	color:#5c23dc;
+}
+
+#favourites center button{
+	padding:10px 60px;
+	letter-spacing:2px;
+	border:none;
+	color:white;
+	background:#5c23dc;
+}

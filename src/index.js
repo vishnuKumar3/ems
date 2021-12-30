@@ -6,6 +6,8 @@ import Home from "./home.js";
 import Product from "./product.js";
 import Store from "./store.js";
 import Contact from "./contact.js";
+import Favourites from "./favourites.js";
+import Profile from "./profile.js";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 const SocialMedia=(event)=>{
@@ -55,7 +57,7 @@ function Index(){
 					<img onClick={(event)=>SocialMedia(event)} src="images/arrow.png"/>
 					<div id="drop-dwn">
 						<a href="/store">Store</a>
-						<a href="#">Favourites</a>
+						<a href="/favourites">Favourites</a>
 						<a href="#">Cart</a>
 						<a href="#">Compare</a>
 						<a href="#">About Us</a>
@@ -68,6 +70,8 @@ function Index(){
 				<Route path="/product" element={<Product/>}/>
 				<Route path="/store" element={<Store/>}/>
 				<Route path="/contact" element={<Contact/>}/>
+				<Route path="/favourites" element={<Favourites/>}/>
+				<Route path="/profile" element={<Profile/>}/>				
 			</Routes>
 		</BrowserRouter>
 	);

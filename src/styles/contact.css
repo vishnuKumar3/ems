@@ -12,14 +12,122 @@
 	background-position:center;
 	background-size:100% 100%;
 	
-	animation:image_anim 5s linear;
+	animation:image_anim 1s linear;
 }
 
 
 @keyframes image_anim{
-	from{opacity:0;transform:scale(0);}
+	from{opacity:0;transform:scale(0.8);}
 	to{opacity:1;transform:scale(1);}
-	/*50%{background-image:url("../../public/images/back3.jpeg");}
-	75%{background-image:url("../../public/images/back4.jpeg");}
-	100%{background-image:url("../../public/images/back1.jpeg");}				*/
 }
+
+@keyframes image_anim1{
+	from{opacity:0;transform:scale(0.8);}
+	to{opacity:1;transform:scale(1);}
+}
+
+#contact #top_details{
+	margin-top:30px;
+	display:flex;
+	justify-content:space-around;
+	align-items:flex-start;
+	padding:0px 100px;
+	letter-spacing:1px;
+	
+}
+
+#contact #top_details #details{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+}
+
+#contact #top_details #details p:nth-child(1){
+	padding:10px 30px 10px 0px;
+	border-bottom:2px solid #582DBC;
+}
+
+#contact #top_details #details p:nth-child(2){
+	margin-top:10px;
+}
+
+#contact #top_details #bottom{
+	margin-top:50px;
+}
+
+
+#contact #bottom #facts{
+	margin-top:50px;
+	display:flex;
+	flex-direction:column;
+	padding-bottom:100px;
+}
+
+#contact #bottom #facts #facts-inner{
+	display:flex;
+	width:100%;
+	align-items:center;
+	flex-direction:column;
+	margin-top:50px;
+}
+
+#contact #bottom #facts #facts-inner #question{
+	margin-top:20px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	width:95%;
+	padding:15px 20px;
+	box-shadow:0px 1px 2px black;
+	border-radius:5px 5px 0px 0px;
+}
+
+#contact #bottom #facts #facts-inner #question p{
+	font-size:20px;
+	letter-spacing:1px;
+}
+
+#contact #bottom #facts #facts-inner #question img{
+	cursor:pointer;
+	width:20px;
+	height:15px;
+}
+
+@keyframes expand_query{
+	from{opacity:0;height:0px;padding-top:0px;}
+	to{opacity:1;height:100px;padding-top:15px;}
+}
+
+@keyframes diminish_query{
+	to{opacity:0;height:0px;padding-top:0px;}
+	from{opacity:1;height:100px;padding-top:15px;}
+}
+
+#contact #bottom #facts #facts-inner #answer{
+	overflow-y:scroll;
+	height:0px;
+	padding:0px 20px;
+	letter-spacing:1px;
+	width:95%;
+	border:1px solid #0005;
+	border-radius:0px 0px 5px 5px;
+}
+
+#contact #bottom #facts #facts-inner #answer::-webkit-scrollbar{
+	width:0px;
+}
+
+#contact center {
+	padding-bottom:50px;
+}
+
+#contact center button{
+	padding:10px 60px;
+	letter-spacing:2px;
+	border:none;
+	color:white;
+	font-weight:500;
+	background:#5c23dc;
+}
+
+
