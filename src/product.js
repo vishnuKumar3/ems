@@ -1,6 +1,7 @@
 import Title from "./components/heading.js";
 import Model from "./components/models.js";
 import Specs from "./components/specs.js";
+import Footer from "./footer.js";
 import "./styles/product.css";
 
 var specs={
@@ -196,6 +197,7 @@ All online payment methods are accepted.</p>
 				<Title title="similar models"/>
 				<Model items={res}/>
 			</div>
+			<Footer/>
 		</div>
 	);
 }

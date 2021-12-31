@@ -1,5 +1,6 @@
 import Model from "./components/models.js";
 import Title from "./components/heading.js";
+import Footer from "./footer.js";
 import "./styles/favourites.css";
 
 var res={
@@ -38,7 +39,8 @@ export default function Favourites(){
 			</div>
 			<center>
 				<button>enter store</button>
-			</center>			
+			</center>
+			<Footer/>			
 		</div>
 	);
 }

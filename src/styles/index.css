@@ -1,9 +1,9 @@
 @keyframes expand{from{height:0px;visibility:hidden;margin-top:60px;opacity:0;} to{height:140px;visibility:visible;margin-top:200px;opacity:1;}}
 
 @keyframes diminish{from{height:140px;visibility:visible;opacity:1;margin-top:200px;} to{height:0px;visibility:visible;opacity:0;margin-top:60px;}}
-@keyframes expand_right{from{height:0px;visibility:hidden;margin-top:60px;opacity:0;} to{height:210px;visibility:visible;margin-top:270px;opacity:1;}}
+@keyframes expand_right{from{height:0px;visibility:hidden;margin-top:60px;opacity:0;} to{height:250px;visibility:visible;margin-top:310px;opacity:1;}}
 
-@keyframes diminish_right{from{height:210px;visibility:visible;opacity:1;margin-top:270px;} to{height:0px;visibility:visible;opacity:0;margin-top:60px;}}
+@keyframes diminish_right{from{height:250px;visibility:visible;opacity:1;margin-top:310px;} to{height:0px;visibility:visible;opacity:0;margin-top:60px;}}
 #navbar{
 	width:100%;
 	background:#582DBC;

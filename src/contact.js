@@ -1,5 +1,6 @@
 import "./styles/contact.css";
 import Title from "./components/heading.js";
+import Footer from "./footer.js";
 import {useState,useEffect} from 'react';
 
 var source=[
@@ -106,6 +107,7 @@ export default function Contact(){
 			<center>
 				<button>enter store</button>
 			</center>
+			<Footer/>
 		</div>
 	);
 }

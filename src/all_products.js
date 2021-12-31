@@ -1,5 +1,6 @@
 import Title from "./components/heading.js";
 import Model from "./components/models.js";
+import Footer from "./footer.js";
 import "./styles/all_products.css";
 
 var res={
@@ -50,6 +51,7 @@ export default function store(){
 		<div id="all_products">
 			<Title title="all products"/>
 			<Model items={res}/>
+			<Footer/>
 		</div>
 	);
 }

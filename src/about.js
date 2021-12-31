@@ -1,5 +1,6 @@
 import "./styles/about.css";
 import Title from "./components/heading.js";
+import Footer from "./footer.js";
 import {useEffect} from "react";
 
 export default function About(){
@@ -51,7 +52,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nam id volutp
 			</div>
 			<center>
 				<button>enter store</button>
-			</center>				
+			</center>
+			<Footer/>				
 		</div>
 	);
 }

@@ -1,5 +1,6 @@
 import "./styles/comparison.css";
 import Title from "./components/heading.js";
+import Footer from "./footer.js";
 
 
 var res={
@@ -116,6 +117,7 @@ export default function Comparison(){
 					<button>enter store</button>				
 				</center>
 			</div>
+			<Footer/>
 		</div>
 	);
 }

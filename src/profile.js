@@ -1,5 +1,6 @@
 import "./styles/profile.css";
 import Title from "./components/heading.js";
+import Footer from "./footer.js";
 
 var list=["account","myorders","subscribe"];
 const profile_modify=(id_num)=>{
@@ -99,7 +100,8 @@ export default function Profile(){
 			</div>
 			<center>
 				<button>enter store</button>
-			</center>			
+			</center>
+			<Footer/>			
 		</div>
 	);
 }

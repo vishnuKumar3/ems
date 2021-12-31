@@ -1,5 +1,6 @@
 import "./styles/mycart.css";
 import Title from "./components/heading.js";
+import Footer from "./footer.js";
 
 var list=["products_head","payment"];
 var cards=["credit","debit","net","delivery"]
@@ -133,7 +134,8 @@ export default function MyCart(){
 				<div>
 				</div>
 				<p>you will recieve these products within 10-15 days</p>
-			</div>			
+			</div>	
+			<Footer/>		
 		</div>
 	);
 }

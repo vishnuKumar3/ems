@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import "./styles/index.css";
+import Authenticate from "./authenticate.js";
 import Home from "./home.js";
 import Product from "./product.js";
 import Store from "./store.js";
@@ -12,6 +13,7 @@ import About from "./about.js";
 import AllProducts from "./all_products.js";
 import Comparison from "./comparison.js";
 import MyCart from "./mycart.js";
+import Footer from "./footer.js";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 const SocialMedia=(event)=>{
@@ -66,6 +68,7 @@ function Index(){
 						<a href="/comparison">Compare</a>
 						<a href="/about">About Us</a>
 						<a href="/contact">Contact Us</a>
+						<a href="/authenticate">Authenticate</a>						
 					</div>
 				</div>
 			</div>
@@ -80,6 +83,8 @@ function Index(){
 				<Route path="/allProducts" element={<AllProducts/>}/>
 				<Route path="/comparison" element={<Comparison/>}/>				
 				<Route path="/mycart" element={<MyCart/>}/>				
+				<Route path="/authenticate" element={<Authenticate/>}/>						
+				<Route path="/footer" element={<Footer/>}/>
 			</Routes>
 		</BrowserRouter>
 	);

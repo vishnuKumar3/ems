@@ -1,6 +1,7 @@
 import Title from "./components/heading.js";
 import Model from "./components/models.js";
 import Specs from "./components/specs.js";
+import Footer from "./footer.js";
 import "./styles/home.css";
 import "./styles/global.css";
 
@@ -243,6 +244,7 @@ export default function Home(){
 					</div>															
 				</div>
 			</div>
+		<Footer/>			
 		</div>
 	);
 }
