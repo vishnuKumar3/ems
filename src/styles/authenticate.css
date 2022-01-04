@@ -85,6 +85,7 @@
 }
 
 #authenticate #body #main #signin form input{
+	font-family:sans-serif;
 	width:70%;
 	height:30px;
 	padding:10px 5px;
@@ -93,7 +94,7 @@
 	border:none;
 	border-bottom:2px solid #0005;
 	background:none;
-	color:#0005;
+	color:black;
 	margin-bottom:10px;
 }
 
@@ -160,6 +161,7 @@
 }
 
 #authenticate #body #main #signup form input{
+	font-family:sans-serif;
 	width:80%;
 	height:30px;
 	padding:10px 5px;
@@ -168,7 +170,7 @@
 	border:none;
 	border-bottom:2px solid #0005;
 	background:none;
-	color:#0005;
+	color:black;
 	margin-bottom:10px;
 }
 
