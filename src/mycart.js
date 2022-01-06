@@ -1,6 +1,7 @@
 import "./styles/mycart.css";
 import Title from "./components/heading.js";
 import Footer from "./footer.js";
+import PaidAlert from "./paid_alert.js";
 
 var list=["products_head","payment"];
 var cards=["credit","debit","net","delivery"]
@@ -55,11 +56,19 @@ const total_bill=()=>{
 	return sum;
 }
 
+const payment=()=>{
+	// IF PAYMENT SUCCESSFUL
+	var ele=document.getElementById("paid");
+	ele.style.display="flex";	
+	ele.style.animation="alertZoom 0.5s linear";
+}
+
 
 export default function MyCart(){
 	return(
 		<div id="mycart">
 			<Title title="my cart"/>
+			<PaidAlert/>			
 			<div id="top">
 				<div id="left">
 					<img src="images/tony.jpeg"/>
@@ -113,7 +122,7 @@ export default function MyCart(){
 											<input type="checkbox"/>
 											<p>SAVE the bank details for faster payments ahead</p>
 										</div>
-										<button>pay $2345</button>
+										<button onClick={payment}>pay $2345</button>
 									</div>
 									<div id="debit">
 										debit

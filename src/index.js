@@ -14,6 +14,7 @@ import AllProducts from "./all_products.js";
 import Comparison from "./comparison.js";
 import MyCart from "./mycart.js";
 import Footer from "./footer.js";
+import PaidAlert from "./paid_alert.js";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 const SocialMedia=(event)=>{
@@ -85,6 +86,7 @@ function Index(){
 				<Route path="/mycart" element={<MyCart/>}/>				
 				<Route path="/authenticate" element={<Authenticate/>}/>						
 				<Route path="/footer" element={<Footer/>}/>
+				<Route path="/paid" element={<PaidAlert/>}/>
 			</Routes>
 		</BrowserRouter>
 	);

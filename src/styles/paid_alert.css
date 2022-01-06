@@ -1,0 +1,81 @@
+#paid{
+	display:none;
+	justify-content:center;
+	align-items:center;
+	margin-top:-130px;
+	width:100%;
+	height:100%;
+	background:#0005;
+	position:fixed;
+	z-index:1;
+}
+
+@keyframes alertZoom{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes paidZoom{from{transform:scale(1);opacity:1;} to{transform:scale(0);opacity:0;}}
+
+
+#paid #alert{
+	width:700px;
+	height:500px;
+	border:none;
+	border-radius:10px;
+	background:white;
+	animation:alertZoom 0.5s linear;	
+}
+
+#paid #alert #section1{
+	display:flex;
+	margin:0;
+	justify-content:end;
+	height:auto;
+}
+
+#paid #alert #section1 button{
+	background:none;
+	padding:20px;
+	border:none;
+}
+
+#paid #alert #section1 img{
+	width:30px;
+	height:30px;
+	cursor:pointer;
+}
+
+#paid #alert #section2{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-top:50px;
+	width:100%;
+}
+
+#paid #alert #section2 #tick{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100px;
+	height:100px;
+	border-radius:100%;
+	border:none;
+	background:lime;
+}
+
+#paid #alert #section2 #tick img{
+	width:60%;
+	height:60%;
+}
+
+#paid #alert #section2 #text{
+	margin-top:30px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#paid #alert #section2 #text p{ 
+	letter-spacing:1px;
+	margin-top:10px;
+}
+	
+
